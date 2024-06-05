@@ -8,11 +8,9 @@
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-	if (parent != NULL)
-	{
-		parent->left = NULL;
-		parent->right = NULL;
-		parent->value = value;
-	}
+	parent->left = NULL;
+	parent->right = NULL;
+	parent->n = value;
+	parent->left = parent->right = NULL;
 	return parent;
 }
